@@ -1,0 +1,94 @@
+//------------------QUESTION-------------------------
+/* Input two subjects with marks
+ * State which subject has a higher mark and lower mark
+ * State if the subject has a mark higher than 50, the candidate passed the subject
+ * State which subject passed and failed
+ * Calculate the average mark
+ * State that if marks 80-100, then it is 'Grade A', else if marks 60-79, it is 'Grade B', else if marks 50-59, it is 'Grade C'.
+ * Otherwise, 'Grade F'
+ */
+
+
+
+package exercise;
+
+import java.util.Scanner;
+
+public class Exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String subject1, subject2;
+		double mark1, mark2;
+		
+		System.out.print("Enter first subject : ");
+		subject1 = sc.nextLine();
+		
+		System.out.print("Enter mark : ");
+		mark1 = sc.nextDouble();
+		
+		System.out.print("\nEnter second subject : ");
+		subject2 = sc.next();
+		
+		System.out.print("Enter mark : ");
+		mark2 = sc.nextDouble();
+		
+		double avg = (mark1 + mark2) / 2;
+		
+		if (mark1 > mark2)
+		{
+			System.out.println("\n" + subject1 + " has a higher mark than " + subject2);
+		}
+		
+		else
+		{
+			System.out.println("\n" + subject2 + " has a higher mark than " + subject1);
+		}
+		
+		
+		if ((mark1 > 50) || (mark2 > 50))
+		{
+			System.out.print("\n" + subject1 + " has " + mark1 + " marks.");
+		    System.out.println("\nPASS");
+		    System.out.print("\n" + subject2 + " has " + mark2 + " marks.");
+		    System.out.println("\nPASS");
+		}
+		else if ((mark1 > 50) || (mark2 < 50))
+		{
+			System.out.print("\n" + subject1 + " has " + mark1 + " marks.");
+			System.out.println("\nPASS");
+			System.out.print("\n" + subject2 + " has " + mark2 + " marks.");
+		    System.out.println("\nFAIL");
+		}
+		else if ((mark2 > 50) || (mark1 < 50))
+		{
+			System.out.print("\n" + subject1 + " has " + mark1 + " marks.");
+		    System.out.println("\nFAIL");
+		    System.out.print("\n" + subject2 + " has " + mark2 + " marks.");
+		    System.out.println("\nPASS");
+		}
+		else
+			System.out.println("\nFAIL");
+		
+		
+		System.out.println("\nAverage mark is " + avg);
+		
+		
+		if ((avg >= 80) && (avg <= 100))
+			System.out.println("\nGrade A");
+		
+		else if ((avg >= 60) && (avg <= 79))
+			System.out.println("\nGrade B");
+			
+		else if ((avg >= 50) && (avg <= 59))
+			System.out.println("\nGrade C");
+		
+		else
+			System.out.println("\nGrade F");
+		
+	}
+
+}
