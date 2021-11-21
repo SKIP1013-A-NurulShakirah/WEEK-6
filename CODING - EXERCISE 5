@@ -1,0 +1,38 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class Exercise5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+        int num;
+		
+		System.out.print("Enter number : ");
+		num = sc.nextInt();
+		
+		switch(num) 
+		{
+		case 10:
+		System.out.print("\nThe number is 10");
+		break;
+		
+		case 20:
+		System.out.print("\nThe number is 20");
+		break;
+	
+		case 30:
+		System.out.print("\nThe number is 30");
+		break;
+	
+	    default:
+		System.out.print("\nInvalid number");
+		
+		}
+
+	}
+
+}
