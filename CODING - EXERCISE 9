@@ -1,0 +1,54 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class Exercise9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int mark;
+		
+		System.out.print(" Enter mark : ");
+		mark = sc.nextInt();
+		
+		switch (mark/10)  {
+		
+		case 10:
+			
+		case 9:
+			System.out.print("\nGrade A");
+			break;
+		
+		case 8:
+			System.out.print("\nGrade B");
+			break;
+		
+		case 7:
+			System.out.print("\nGrade C");
+			break;
+		
+		case 6:
+			System.out.print("\nGrade D");
+			break;
+		
+		case 5:
+			System.out.print("\nGrade E");
+			break;
+		
+		case 4:
+		case 3:
+		case 2:
+		case 1:
+			System.out.print("\nGrade F");
+			break;
+		
+		default:
+		    System.out.print("\nInvalid mark");
+		}
+
+	}
+
+}
