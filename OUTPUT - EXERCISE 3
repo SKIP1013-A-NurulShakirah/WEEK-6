@@ -1,0 +1,17 @@
+Enter first subject : Science
+Enter mark : 77
+
+Enter second subject : Mathematics
+Enter mark : 90
+
+Mathematics has a higher mark than Science
+
+Science has 77.0 marks.
+PASS
+
+Mathematics has 90.0 marks.
+PASS
+
+Average mark is 83.5
+
+Grade A
