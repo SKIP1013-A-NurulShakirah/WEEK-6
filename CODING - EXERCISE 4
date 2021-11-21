@@ -1,0 +1,37 @@
+//Question : Use scanner input, enter integer number. If the number 20 the same as input number, print the number.
+//Katakan kamu ada 3 number iaitu 10, 20 dan 30. Semak dengan input number
+
+package exercise;
+
+import java.util.Scanner;
+
+public class Exercise4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num;
+		
+		System.out.print("Enter number : ");
+		num = sc.nextInt();
+		
+		if (num == 10)
+			System.out.print("\nThe number is 10");
+		
+		else if (num == 20)
+			System.out.print("\nThe number is 20");
+		
+		else if (num == 30)
+			System.out.print("\nThe number is 30");
+		
+		else
+			System.out.print("\nInvalid number");
+		
+		
+		
+
+	}
+
+}
