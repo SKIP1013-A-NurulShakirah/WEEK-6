@@ -1,0 +1,43 @@
+
+//Kira BMI dan kelaskan ikut kategori.
+
+
+package exercise;
+
+import java.util.Scanner;
+
+public class Exercise2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double height, weight;
+		double BMI;
+		
+		System.out.print("Enter height(m) : ");
+		height = sc.nextDouble();
+		
+		System.out.print("Enter weight(kg) : ");
+		weight = sc.nextDouble();
+		
+		BMI = weight / (height * height);
+		
+		
+		if (BMI < 18.5)
+			System.out.printf("Underweight with BMI of %.2f", BMI);
+		
+		else if ((BMI >= 18.5) && (BMI <= 24.9))
+			System.out.printf("Normal weight with BMI of %.2f", BMI);
+		
+		else if ((BMI >= 25.0) && (BMI <= 29.9))
+			System.out.printf("Overweight with BMI of %.2f", BMI);
+		
+		else 
+			System.out.printf("Obesity with BMI of %.2f", BMI);
+		
+
+	}
+
+}
