@@ -1,0 +1,22 @@
+-----output 1-----
+Enter number : 15
+
+Invalid number
+
+
+-----output 2-----
+Enter number : 10
+
+The number is 10
+
+
+-----output 3-----
+Enter number : 20
+
+The number is 20
+
+
+-----output 4-----
+Enter number : 30
+
+The number is 30
