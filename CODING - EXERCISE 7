@@ -1,0 +1,63 @@
+/*
+ * Write a program which calculates marks on basis of given grades in java using switch statement
+ * if Grade A then  marks >=90
+ * if Grade B then marks >=80 and less than 90
+ * if Grade C then marks >=70 and less than 80
+ * if Grade D then marks >=60 and less than 70
+ * if Grade E then marks >=50 and less than 60
+ * if Grade F then marks <=40
+ * if any other grade is passed then print invalid grade
+ */
+
+
+
+package exercise;
+
+import java.util.Scanner;
+
+public class Exercise7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		char grade;
+		
+		System.out.print(" Enter Grade : ");
+		grade = sc.next().charAt(0);
+		
+		switch (grade)  {
+		
+		case 'A':
+			System.out.print("\nMarks is >=90");
+			break;
+		
+		case 'B':
+			System.out.print("\nMarks is >=80 and less than 90");
+			break;
+		
+		case 'C':
+			System.out.print("\nMarks is >=70 and less than 80");
+			break;
+		
+		case 'D':
+			System.out.print("\nMarks is >=60 and less than 70");
+			break;
+		
+		case 'E':
+			System.out.print("\nMarks is >=50 and less than 60");
+			break;
+		
+		case 'F':
+			System.out.print("\nMarks is <=40");
+			break;
+		
+		default:
+		    System.out.print("\nInvalid marks");
+		    
+		}
+
+	}
+
+}
